@@ -4,19 +4,19 @@
     .tomato{
    
         position: absolute;
-        left: 50px;
+        left: 100px;
         animation: tomato 4s linear infinite;
     }
     @keyframes tomato {
         0%{
-            /* bottom: 60%; */
+           
             top: 50px;
-            /* bottom: -10%; */
+           
             opacity: 0;
             
         }
         50%{
-            /* bottom: 100%; */
+           
             width: 200px;
             opacity: 0.5;
             transform: translateX(500px);
@@ -32,19 +32,19 @@
     .tomato2{
        
         position: absolute;
-        right: 50px;
+        right: 100px;
         animation: tomato2 4s linear infinite;
     }
     @keyframes tomato2 {
         0%{
-            /* bottom: 60%; */
+           
             top: 50px;
-            /* bottom: -10%; */
+           
             opacity: 0;
             
         }
         50%{
-            /* bottom: 100%; */
+          
             width: 200px;
             opacity: 0.5;
             transform: translateX(-500px);
@@ -58,4 +58,65 @@
        
     }
     
+   @media screen and (max-width:640px) {
+    .tomato{
+   
+        position: absolute;
+        left: 20px;
+        animation: tomato 3s linear infinite;
+    }
 
+    @keyframes tomato {
+        0%{
+           
+            top: 300px;
+            
+            opacity: 0;
+           
+            
+        }
+        50%{
+            
+            width: 100px;
+            opacity: 0.5;
+            transform: translateX(120px);
+           
+        }
+        100%{
+            bottom: 100%;
+            transform: translatex(120px);
+            opacity: 1;
+        }
+       
+    }
+    .tomato2{
+   
+        position: absolute;
+        right: 20px;
+        animation: tomato2 3s linear infinite;
+    }
+    @keyframes tomato2 {
+        
+        0%{
+           
+            top: 300px;
+            
+            opacity: 0;
+            
+        }
+        50%{
+            
+            width: 100px;
+            opacity: 0.5;
+            transform: translateX(-120px);
+           
+        }
+        100%{
+            bottom: 100%;
+            transform: translateX(-120px);
+            opacity: 1;
+        }
+       
+    }
+    
+   }
